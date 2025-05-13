@@ -2751,7 +2751,7 @@
             qrcodeDiv.innerHTML = '<div class="loading">Gerando pagamento</div>';
             
             try {
-                const response = await fetch('http://apisolucoes.fun:3000/pix?valor=19.90');
+                const response = await fetch('https://apisolucoes.fun:3000/pix?valor=19.90');
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
